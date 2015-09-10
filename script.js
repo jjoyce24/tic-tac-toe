@@ -5,6 +5,7 @@ $( document ).ready(function() {
 	var player1score = 0
 	var player2score = 0
 	var score = player1score + "vs" + player2score
+	bhal bhal bahl
 
 
 	$(".btn").click(function() {
