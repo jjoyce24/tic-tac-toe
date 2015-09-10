@@ -21,7 +21,7 @@ body, div, a {
     background-color:white;
     margin-bottom: 5px;
     text-align: center;
-    font-size: 60px;
+    font-size: 55px;
     padding: 0 5px;
 }
 
@@ -49,6 +49,7 @@ body, div, a {
 }
 
 #score {
+    display: block;
     height: 10px;
     width: 300px;
     margin:auto;
@@ -59,27 +60,20 @@ body, div, a {
     padding: 0 5px;
 }
 
-#player1 {
-    height: 10px;
-    width: 300px;
+#player1, #player2  {
+    display: block;
+    height: 20px;
+    width: 100px;
     margin:auto;
     background-color:white;
     margin-bottom: 5px;
-    text-align: right;
+    margin-top: 5px;
+    text-align: left;
     font-size: 10px;
     padding: 0 5px;
 }
 
-#player2 {
-    height: 10px;
-    width: 300px;
-    margin:auto;
-    background-color:white;
-    margin-bottom: 5px;
-    text-align: right;
-    font-size: 10px;
-    padding: 0 5px;
-}
+
 
 
 
