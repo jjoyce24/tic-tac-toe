@@ -17,11 +17,51 @@ $( document ).ready(function() {
 	        playersTurn = "Player One";
 		}
 
-	    });
+
+//create if statements to decide who the winner is
+		var btn1 = $(".btn1").text;
+		var btn2 = $(".btn2").text;
+		var btn3 = $(".btn3").text;
+		if (btn1.text == 'x' && btn2.text == 'x' && btn3.text == 'x'){ 
+			alert("Player1 Wins!")
+		}
+
+		// check rows
+			// val0 = $(".btn1").value;
+			// val1 = $(".btn2").value;
+			// val2 = $(".btn3").value;
+			// if(val0 == 'x' && val1 == 'x' && val2 == 'x')
+			// {
+			// status.innerHTML = "X WINS!";
+			// return true;
+			// }
+			// else if(val0 == 'o' && val1 == 'o' && val2 == 'o')
+			// {
+			// status.innerHTML = "O WINS!";
+			// return true;
+			// }
+			// })
+
+		$("#reset").click(function (){
+
+	    player1Name = $("#player1").val();
+	    player2Name = $("#player2").val();
+
+	    if(player1Name=="" || player2Name==""){
+	        alert("Please set player all the names.");
+	        return;
+	    }
+
+	    setTurn();
+});
+
+	});
 	
 	$("#reset").click(function(){
 		$(".btn").text("");
 	})
+
+
 
 	});
 
@@ -29,112 +69,3 @@ $( document ).ready(function() {
 	    location.reload(true);
 }
 
-// var cell;
-// var nextTurn = 'X';
-
-
-
-// function mouseMotion(ref,motion){
-// if(motion == 'over')
-//     {
-//         ref.style.borderColor='#E00';
-//     }
-//     else if(motion == 'out')
-//     {
-//         ref.style.borderColor='#CCC';
-//     }
-// }
-
-// function cellClick(cell){
-// if (cell.innerHTML === 'X' || cell.innerHTML === 'O')
-// { alert ('Square has already been choosen, please select another square');
-// return
-// }
-// cell.innerHTML = nextTurn;
-// playersTurn();
-// winnerIs();
-
-//  }
-// function playersTurn(){
-// if(nextTurn == 'X'){
-//     nextTurn = 'O';
-//     }
-// else {
-//     nextTurn = 'X';
-//     }
-// }
-
-// function winnerIs(){
-
-// if (document.getElementById("cell1x1").innerHTML == 'X' &&    document.getElementById("cell1x2").innerHTML == 'X' && document.getElementById("cell1x3").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-
-// }
-
-// else if (document.getElementById("cell2x1").innerHTML == 'X' && document.getElementById("cell2x2").innerHTML == 'X' && document.getElementById("cell2x3").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell3x1").innerHTML == 'X' && document.getElementById("cell3x2").innerHTML == 'X' && document.getElementById("cell3x3").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell1x1").innerHTML == 'X' && document.getElementById("cell2x2").innerHTML == 'X' && document.getElementById("cell3x3").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell1x3").innerHTML == 'X' && document.getElementById("cell2x2").innerHTML == 'X' && document.getElementById("cell3x1").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if(document.getElementById("cell1x1").innerHTML == 'X' && document.getElementById("cell2x1").innerHTML == 'X' && document.getElementById("cell3x1").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if(document.getElementById("cell1x2").innerHTML == 'X' && document.getElementById("cell2x2").innerHTML == 'X' && document.getElementById("cell3x2").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if(document.getElementById("cell1x3").innerHTML == 'X' && document.getElementById("cell2x3").innerHTML == 'X' && document.getElementById("cell3x3").innerHTML == 'X')
-// {document.getElementById('winnerIs').innerHTML = 'Player 1 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell1x1").innerHTML == 'O' && document.getElementById("cell1x2").innerHTML == 'O' && document.getElementById("cell1x3").innerHTML == 'O')
-// {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell2x1").innerHTML == 'O' && document.getElementById("cell2x2").innerHTML == 'O' && document.getElementById("cell2x3").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell3x1").innerHTML == 'O' && document.getElementById("cell3x2").innerHTML == 'O' && document.getElementById("cell3x3").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell1x1").innerHTML == 'O' && document.getElementById("cell2x2").innerHTML == 'O' && document.getElementById("cell3x3").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if (document.getElementById("cell1x1").innerHTML == 'O' && document.getElementById("cell1x2").innerHTML == 'O' && document.getElementById("cell1x3").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if(document.getElementById("cell1x1").innerHTML == 'O' && document.getElementById("cell2x1").innerHTML == 'O' && document.getElementById("cell3x1").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if(document.getElementById("cell1x2").innerHTML == 'O' && document.getElementById("cell2x2").innerHTML == 'O' && document.getElementById("cell3x2").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// else if(document.getElementById("cell1x3").innerHTML == 'O' && document.getElementById("cell2x3").innerHTML == 'O' && document.getElementById("cell3x3").innerHTML == 'O')
-//     {document.getElementById('winnerIs').innerHTML = 'Player 2 Wins!';
-//  document.getElementById('winnerIs').style.display = 'block';
-//  }
-// }
-
-
-// function startNewGame(){
-//     location.reload(true);
-// }
