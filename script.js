@@ -38,97 +38,97 @@ $( document ).ready(function() {
 		var btn9 = $(".btn9").text();
 		
 		if (btn1 == 'x' && btn2 == 'x' && btn3 == 'x'){ 
-			alert("Player X Wins!");
+			alert("Player X Wins This Round!");
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn1 == 'o' && btn2 == 'o' && btn3 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn4 == 'x' && btn5 == 'x' && btn6 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn4 == 'o' && btn5 == 'o' && btn6 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn7 == 'x' && btn8 == 'x' && btn9 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn7 == 'o' && btn8 == 'o' && btn9 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn1 == 'x' && btn4 == 'x' && btn7 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn1 == 'o' && btn4 == 'o' && btn7 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn2 == 'x' && btn5 == 'x' && btn8 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn2 == 'o' && btn5 == 'o' && btn8 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn3 == 'x' && btn6 == 'x' && btn9 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn3 == 'o' && btn6 == 'o' && btn9 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn1 == 'x' && btn5 == 'x' && btn9 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn1 == 'o' && btn5 == 'o' && btn9 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn3 == 'x' && btn5 == 'x' && btn7 == 'x'){
-			alert("Player X Wins!")
+			alert("Player X Wins This Round!")
 			player1score++;
 			$(".btn").text("");
 			moveCount = 0;
 		}
 		else if (btn3 == 'o' && btn5 == 'o' && btn7 == 'o'){
-			alert("Player O Wins!")
+			alert("Player O Wins This Round!")
 			player2score++;
 			$(".btn").text("");
 			moveCount = 0;
