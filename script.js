@@ -4,10 +4,19 @@ $( document ).ready(function() {
 	var moveCount = 0;
 	var player1score = 0
 	var player2score = 0
-	var score = player1score + "vs" + player2score
+	//create a function or calculate the string for scoreboard
+// var score = [0];
 
+// for (var i = 0; i < n; i++)
+// {
+//     alert(score[i])
+// }
 
 	$(".btn").click(function() {
+		var check = $(this).text();
+		if( check == "x" || check == "o"){
+			return;
+		}
 		if(playersTurn === "Player One"){
 	        $(this).text("x");
 	        $(this).css("color", "blue");
@@ -34,7 +43,6 @@ $( document ).ready(function() {
 		if (btn1 == 'x' && btn2 == 'x' && btn3 == 'x'){ 
 			alert("Player1 Wins!");
 			player1score++;
-			console.log(player1score);
 			$(".btn").text("");
 			moveCount = 0;
 		}
@@ -136,8 +144,6 @@ $( document ).ready(function() {
 			return;
 		}
 
-
-
 		});
 //***DONE***creat a variable that stores wins & add 1 to each if else win
 //SCOREBOARD create a counter that will decide who won the game and store it in a variable
@@ -154,4 +160,5 @@ $( document ).ready(function() {
 	function startNewGame(){
 	    location.reload(true);
 }
+
 
