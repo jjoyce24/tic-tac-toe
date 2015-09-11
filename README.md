@@ -53,5 +53,3 @@ Third part was working with jQuery and used a fair share of if/else statements. 
 
 ### Unsolved Problems
 DRY DRY DRY. I wanted to use arrays and for loops to cut down on the if/else statements.
-
-***A readme.md file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.***
