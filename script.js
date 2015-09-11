@@ -1,16 +1,13 @@
+//***DONE***creat a variable that stores wins & add 1 to each if else win
+//***DONE*** create a counter that will decide who won the game and store it in a variable
+//***DONE***when player wins clears board.
+//***DONE***create if statements to decide who the winner is
 $( document ).ready(function() {
 
 	var playersTurn = "Player One";
 	var moveCount = 0;
 	var player1score = 0
 	var player2score = 0
-	//create a function or calculate the string for scoreboard
-// var score = [0];
-
-// for (var i = 0; i < n; i++)
-// {
-//     alert(score[i])
-// }
 
 	$(".btn").click(function() {
 		var check = $(this).text();
@@ -139,26 +136,30 @@ $( document ).ready(function() {
 		else if ( moveCount >= 9) {
 			alert("It's a Draw!")
 			moveCount = 0;
+			$(".btn").text("");
 		}
 		else{
 			return;
 		}
+//scoreboard 
+		if (player1score >= 1 || player2score >= 1) {
+			$('#player1').val("Player X has" + " " + player1score + " " + "wins");
+			$('#player2').val("Player O has" + " " + player2score + " " + "wins");
+		}
 
 		});
-//***DONE***creat a variable that stores wins & add 1 to each if else win
-//SCOREBOARD create a counter that will decide who won the game and store it in a variable
-//***DONE***when player wins clears board.
-//***DONE***create if statements to decide who the winner is
-//be able to pick o or x
 
 });
-//why is reset button not working anymore???	
-	$("#reset").click(function(){
-		$(".btn").text("");
-	});
 
-	function startNewGame(){
-	    location.reload(true);
+// The reload() method is used to reload the current document.
+
+// The reload() method does the same as the reload button in your browser.
+function startNewGame(){
+	location.reload(true);
 }
+
+// $("#reset").click(function(){
+// 	$(".btn").text("");
+// });
 
 
